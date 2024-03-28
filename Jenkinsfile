@@ -5,7 +5,7 @@ pipeline {
         stage('Fetch from GitHub') { // build steps
             steps {
                 echo 'Fetching from GitHub'
-                git branch: 'TP3', url:'https://github.com/LengSokchhay/Jenkin.git'
+                git branch: 'TP2', url:'https://github.com/LengSokchhay/Jenkin.git'
             }
         }
         stage('Build using Tools') {
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Testing unit tests...'
                 echo 'Testing features...'
-                sh 'php artisan test'
+                sh 'php artisan test1'
             }
         }
         stage('Email Notification'){

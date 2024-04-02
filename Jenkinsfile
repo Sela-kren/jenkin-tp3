@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Testing unit tests...'
                 echo 'Testing features...'
-                sh 'php artisan test'
+                sh 'php artisan test1'
             }
         }
     }

@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "TP3" ]
   pull_request:
-    branches: [ "TP3" ]
+    branches: [ "main" ]
 
 jobs:
   laravel-tests:
